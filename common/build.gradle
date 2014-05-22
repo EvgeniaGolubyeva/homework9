@@ -1,0 +1,5 @@
+dependencies {
+    compile 'javax:javaee-api:7.0'
+    compile 'org.mybatis:mybatis:3.2.7'
+    runtime 'org.glassfish:javax.json:1.0.4'
+}

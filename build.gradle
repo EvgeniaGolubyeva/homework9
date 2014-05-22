@@ -1,0 +1,23 @@
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        jcenter()
+
+        maven {
+            url = "https://oss.sonatype.org/content/repositories/snapshots"
+        }
+    }
+}
+
+project(':auction-server') {
+    apply plugin: 'war'
+}
+
+project(':bid-engine') {
+    apply plugin: 'war'
+}

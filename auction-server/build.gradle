@@ -1,0 +1,9 @@
+dependencies {
+    compile project(':common')
+    providedCompile 'javax:javaee-api:7.0'
+    runtime 'org.glassfish:javax.json:1.0.4'
+}
+
+war {
+    war.baseName = 'auction'
+}
